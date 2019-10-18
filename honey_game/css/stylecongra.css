@@ -1,0 +1,44 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+.clr{
+	clear:both;
+}
+body{
+	background-image:url(../img/bg.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+}
+#wrap{
+	width:800px;
+	margin:auto;
+	background-color:#ffffff;
+}
+#wrap > p{
+	background-color:#8F006D;
+	color:#FFF;
+	font-size:17px;
+	font-family:"Showcard Gothic";
+	text-align:center;
+	line-height:100px;
+	display:block;
+	width:100%;
+}
+#content{
+	width:100%;
+}
+.boy{
+	border:2px solid #ffffff;
+	width:200px;
+	height:200px;
+	display:block;
+	float:left;
+	overflow:hidden;
+	transition:all 0.2s ease-in-out;
+}
+.boy:hover{
+	transform:scale(1.2);
+	border-radius:10px;
+}

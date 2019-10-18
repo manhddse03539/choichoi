@@ -1,0 +1,165 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+.clr{
+	clear:both;
+}
+body{
+	background-image:url(../img/bg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#wrap{
+	margin:auto;
+	width:100%;	
+}
+#content{
+	width:100%;
+	padding:0% 2% 0% 2%;
+	position:relative;
+}
+.grid{
+	width:12.5%;
+	float:left;
+	padding:0.5%;
+}
+.card{
+	position:relative;
+	height:100%;
+	transition:all 0.3s ease-in-out; 
+}
+.card:hover{
+	transform:scale(1.2);
+	z-index:2;
+}
+.front >img,.back  >img{
+	width:100%;
+	cursor:pointer;
+	border-radius:4%;
+}
+.front{
+	transform:rotateY(180deg);
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+}
+.front.flip{
+	transform:rotateY(0deg);
+}
+.back.flip{
+	transform:rotateY(180deg);
+}
+.back,.front{
+	-webkit-backface-visibility: hidden; 
+	-moz-backface-visibility: hidden; 
+	backface-visibility:hidden;
+	transition:all 0.3s;
+}
+#option,#option-win,#option-lose{
+	display:none;
+	position:fixed;
+	z-index:1000;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#option{
+	display:block;
+}
+.dialog{
+	width:800px;
+	height:450px;
+	overflow:hidden;
+	margin:auto;
+	margin-top:5%;
+	background-image:url(../img/lol.jpg);
+	background-size:contain;
+	border-radius:5px;
+}
+#option-win .dialog{
+	background-image:url(../img/lol.jpg);
+	background-size:cover;
+}
+#option-lose .dialog{
+	background-image:url(../img/lol_lose.jpg);
+	background-size:cover;
+}
+.dialog p:nth-child(1){
+	color:#ffffff;
+	background-color:#000;
+	opacity:0.6;
+	font-family:"Comic Sans MS", cursive;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+}
+.dialog p:nth-child(2){
+	color:#ffffff;
+	background-color:#000;
+	opacity:0.6;
+	font-family:"Comic Sans MS", cursive;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+}
+.dialog button:nth-child(3){
+	color:#ffffff;
+	background-color:#000;
+	opacity:0.6;
+	font-family:"Comic Sans MS", cursive;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+	display:block;
+	margin:auto;
+	width:130px;
+	height:130px;
+	border-radius:50%;
+	transition:all 0.2s ease-in-out;
+}
+.dialog button:nth-child(3):hover{
+	color:#000;
+	background-color:#ffffff;
+	transform:scale(1.5);
+	opacity:0.8;
+}
+.dialog p:nth-child(4){
+	color:#ffffff;
+	background-color:#000;
+	opacity:0.6;
+	font-family:"Comic Sans MS", cursive;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+	line-height:230px;
+	display:none;
+}
+#option-lose .dialog p:nth-child(4){
+	display:block;
+}
+.dialog a:nth-child(4){
+	display:block;
+	color:#ffffff;
+	background-color:#000;
+	opacity:0.6;
+	font-family:"Comic Sans MS", cursive;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+	line-height:230px;
+	transition:all 0.2s ease-in-out;
+	text-decoration:none;
+}
+.dialog a:nth-child(4):hover{
+	font-size:36px;
+}
+/********************************/
+#time-bar{
+	margin-top:5px;
+	width:100%;
+}

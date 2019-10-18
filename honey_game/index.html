@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<title>Honey game</title>
+</head>
+
+<body onload="" >
+	<audio id="bg-music" >
+    	<source src="" />
+    </audio>
+	<div id="wrap">
+    	<div id="content">
+        	<progress id='time-bar'></progress>
+        	<div id='option'>
+            	<div class='dialog'>
+                	<p>20-10 Tìm gấu chơi Đông</p>
+                    <p>Sau khi vượt qua thử thách,bạn sẽ được tặng 1 con gấu</p>
+                    <button onclick="chien()">Chiến</button>
+                    <p>Ok! Bạn có 30 giây</p>
+                </div>
+            </div>
+            <div id='option-win'>
+            	<div class='dialog'>
+                	<p>Con hâm hấp này</p>
+                    <p>Nhà ngươi khá lắm!</p>
+                    <button onclick="replay()">Chơi lại</button>
+                    <a href="congratulation.html">Click vào đây để nhận gấu</a>
+                </div>
+            </div>
+            <div id='option-lose'>
+            	<div class='dialog'>
+                	<p>Thua Cuộc</p>
+                    <p>Hoy đi nha! Muốn có quà thì chơi lại đi</p>
+                    <button onclick="replay()">Chơi lại</button>
+                    <p>Chơi thế này thì chỉ nhận được gấu chó thôi babe à</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+</body>
+</html>
